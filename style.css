@@ -9,9 +9,6 @@ body {
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  width: 80vw; /* change this to the desired size */
-  max-width: 800px; /* change this to the desired size */
-  margin: 0 auto;
   justify-content: flex-start;
   align-items: flex-start;
   background-color: white;
@@ -38,7 +35,9 @@ body {
   padding: 10px;
   border-radius: 10px;
   margin-right: 20px;
-  margin-left: 50px;
+  margin-left: 200px;
+  align-self: center;
+  max-height: 17vh;
 }
 
 #sidebar button {
@@ -57,4 +56,17 @@ body {
 }
 #sidebar button:hover {
   background-color: gray;
+}
+
+.bigger-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw; 
+  max-width: 800px; 
+  margin: 0 auto;
+}
+.biggest {
+  display: flex;
+  justify-content: center;
+  margin-left: 290px;
 }

@@ -27,8 +27,8 @@ function fillGrid(numOfSquaresPerSide) {
     squareDiv.style.width = `${squareSize}px`;
     squareDiv.style.height = `${squareSize}px`;
     mainContainer.appendChild(squareDiv);
-
-    let isMouseDown = false;
+  }
+  let isMouseDown = false;
     document.addEventListener('mousedown', () => (isMouseDown = true));
     document.addEventListener('mouseup', () => (isMouseDown = false));
 
@@ -55,7 +55,6 @@ function fillGrid(numOfSquaresPerSide) {
         }
       });
     });
-  }
 }
 
 function removeGrid() {
@@ -65,12 +64,15 @@ function removeGrid() {
 }
 
 function getUserChoice() {
-  const userSizeChoice = +prompt('Chose Size of Grid if you wish');
+  const userSizeChoice = +prompt(`Chose Size of Grid if you wish, currently it is ${numberOfSquaresPerSide}`);
   numberOfSquaresPerSide = userSizeChoice;
+  
   if (!userSizeChoice) return;
+
   removeGrid();
   fillGrid(numberOfSquaresPerSide);
 }
+
 function resetGrid() {
   const allSquares = document.querySelectorAll('.square');
   allSquares.forEach((s) => {
@@ -89,4 +91,10 @@ resetButton.addEventListener('click', () => resetGrid());
 const eraserButton = document.querySelector('#eraserButton');
 eraserButton.addEventListener('click', () => {
   eraserOn = !eraserOn;
-});
+  if (eraserOn) {
+    eraserButton.style.boxShadow = '0 0 50px 20px #00ff00';
+  }
+  else {
+    eraserButton.style.boxShadow = '';
+  }
+})
