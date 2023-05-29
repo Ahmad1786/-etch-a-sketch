@@ -29,8 +29,8 @@ function fillGrid(numOfSquaresPerSide) {
     mainContainer.appendChild(squareDiv);
 
     let isMouseDown = false;
-    document.addEventListener('mousedown', () => isMouseDown = true);
-    document.addEventListener('mouseup', () => isMouseDown = false);
+    document.addEventListener('mousedown', () => (isMouseDown = true));
+    document.addEventListener('mouseup', () => (isMouseDown = false));
 
     const allSquares = document.querySelectorAll('.square');
     allSquares.forEach((s) => {
@@ -67,7 +67,7 @@ function removeGrid() {
 function getUserChoice() {
   const userSizeChoice = +prompt('Chose Size of Grid if you wish');
   numberOfSquaresPerSide = userSizeChoice;
-  if (!(userSizeChoice)) return;
+  if (!userSizeChoice) return;
   removeGrid();
   fillGrid(numberOfSquaresPerSide);
 }

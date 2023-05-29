@@ -1,60 +1,60 @@
 body {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    color: #a020f0;
-    font-family: 'Arial', sans-serif; 
-    text-align: center;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  color: #a020f0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
 }
 .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80vw; /* change this to the desired size */
-    max-width: 800px; /* change this to the desired size */
-    margin: 0 auto;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw; /* change this to the desired size */
+  max-width: 800px; /* change this to the desired size */
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
 }
 
 .square {
-    box-sizing: border-box;
-    border: 1px solid #000;
+  box-sizing: border-box;
+  border: 1px solid #000;
 }
 
 .square:hover {
-    background-color: #a020f0;
+  background-color: #a020f0;
 }
 
 .colored-red {
-    background-color: red;
+  background-color: red;
 }
 .colored-white {
-    background-color: white;
+  background-color: white;
 }
 
 #sidebar {
-    background-color: #a020f0;
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 20px;
-    margin-left: 50px;
+  background-color: #a020f0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-left: 50px;
 }
 
 #sidebar button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 1.2em;
-    border-radius:5px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
 }
 
 #sidebar button {
-    background-color: #000;
-    color: #a020f0;
-    border: none;
+  background-color: #000;
+  color: #a020f0;
+  border: none;
 }
 #sidebar button:hover {
-    background-color:gray;
+  background-color: gray;
 }
