@@ -41,8 +41,7 @@ body {
     margin-left: 50px;
 }
 
-#sidebar button, 
-#sidebar select {
+#sidebar button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -56,12 +55,6 @@ body {
     color: #a020f0;
     border: none;
 }
-#sidebar button:hover,  
-#sidebar select:hover {
+#sidebar button:hover {
     background-color:gray;
-}
-
-#sidebar select {
-    background-color: #000;
-    color: #a020f0;
 }
